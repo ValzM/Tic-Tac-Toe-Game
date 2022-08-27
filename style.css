@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap');
+
+body{
+    background-color: #F3F0D7;
+    font-family: 'Bubblegum Sans', cursive;
+    letter-spacing: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#whowon{
+    text-align: center;
+    margin-top: 6rem;
+    color: #E0C097;
+    
+}
+
+.scoreboard {
+    display: flex;
+    justify-content: space-around;
+    width: 500px;
+}
+
+#player1score {
+    color: #8CC0DE;
+}
+
+#player2score {
+    color: #de8c8c;
+}
+
+#draw {
+    color: #E0C097;
+}
+table{
+    border-collapse: collapse;
+    margin-top: 2rem;
+    width: 500px;
+    height: 500px;
+}
+td{
+    border: 5px solid #E0C097;
+    width: 150px;
+    height: 150px;
+    border-collapse: collapse;
+    font-size: 5rem;
+    text-align: center;
+}
+
+/* Création des lignes du tableau */
+
+#firstrow td:nth-child(1){
+    border-right: 5px solid #E0C097;
+    border-bottom: 5px solid #E0C097;
+    border-left: 0px;
+    border-top: 0px;
+    
+}
+
+#firstrow td:nth-child(2){
+    border-right: 5px solid #E0C097;
+    border-bottom: 5px solid #E0C097;
+    border-left: 5px solid #E0C097;
+    border-top: 0px;
+    
+}
+
+#firstrow td:nth-child(3){
+    border-right: 0px;
+    border-bottom: 5px solid #E0C097;
+    border-left: 5px solid #E0C097;
+    border-top: 0px;
+    
+}
+
+#secondrow td:nth-child(1){
+    border-right: 5px solid #E0C097;
+    border-bottom: 5px solid #E0C097;
+    border-left: 0px;
+    border-top: 5px solid #E0C097;
+}
+
+#secondrow td:nth-child(3){
+    border-right: 0px;
+    border-bottom: 5px solid #E0C097;
+    border-left:  5px solid #E0C097;
+    border-top: 5px solid #E0C097;
+}
+
+#thirdrow td:nth-child(1){
+    border-right:  5px solid #E0C097;
+    border-bottom: 0px;
+    border-left: 0px;
+    border-top: 5px solid #E0C097;
+}
+
+#thirdrow td:nth-child(2){
+    border-right:  5px solid #E0C097;
+    border-bottom: 0px;
+    border-left:  5px solid #E0C097;
+    border-top: 5px solid #E0C097;
+}
+
+#thirdrow td:nth-child(3){
+    border-right:  0px;
+    border-bottom: 0px;
+    border-left:  5px solid #E0C097;
+    border-top: 5px solid #E0C097;
+}
+
+/* Bouttons */
+
+button{
+    margin-top: 2rem;
+    background: none;
+    font-family: 'Bubblegum Sans', cursive;
+    font-size: 200%;
+    color: #E0C097;
+    border: none;
+    letter-spacing: 4px;
+}
+
+#reset{
+    display: none;
+}
